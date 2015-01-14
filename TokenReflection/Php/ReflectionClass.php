@@ -115,6 +115,17 @@ class ReflectionClass extends InternalReflectionClass implements IReflection, To
 		return array();
 	}
 
+    /**
+     * Returns if the class has a specific method
+     *
+     * @param string $name method name
+     * @return bool
+     */
+    public function hasMethod($name)
+    {
+        return parent::hasMethod($name);
+    }
+
 	/**
 	 * Returns if the class is an exception or its descendant.
 	 *
