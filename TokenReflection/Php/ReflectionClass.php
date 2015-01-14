@@ -145,6 +145,11 @@ class ReflectionClass extends InternalReflectionClass implements IReflection, To
         parent::getConstant($name);
     }
 
+    public function getStaticPropertyValue($name, $default = null)
+    {
+        parent::getStaticPropertyValue($name, $default);
+    }
+
 
     /**
 	 * Returns if the class is an exception or its descendant.
