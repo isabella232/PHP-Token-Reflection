@@ -127,6 +127,11 @@ class ReflectionMethod extends InternalReflectionMethod implements IReflection, 
         parent::invoke($object, $args);
     }
 
+    public function invokeArgs($object, array $args)
+    {
+        parent::invokeArgs($object, $args);
+    }
+
 
     /**
 	 * Returns if the current reflection comes from a tokenized source.
