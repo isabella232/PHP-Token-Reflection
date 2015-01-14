@@ -137,7 +137,16 @@ class ReflectionClass extends InternalReflectionClass implements IReflection, To
         return parent::hasConstant($name);
     }
 
-	/**
+    /**
+     * {@inheritdoc}
+     */
+    public function getConstant($name)
+    {
+        parent::getConstant($name);
+    }
+
+
+    /**
 	 * Returns if the class is an exception or its descendant.
 	 *
 	 * @return boolean
