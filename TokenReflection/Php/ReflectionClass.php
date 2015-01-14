@@ -155,6 +155,11 @@ class ReflectionClass extends InternalReflectionClass implements IReflection, To
         parent::newInstance($args, $_);
     }
 
+    public function newInstanceArgs(array $args = null)
+    {
+        parent::newInstanceArgs($args);
+    }
+
 
     /**
 	 * Returns if the class is an exception or its descendant.
