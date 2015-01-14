@@ -126,6 +126,17 @@ class ReflectionClass extends InternalReflectionClass implements IReflection, To
         return parent::hasMethod($name);
     }
 
+    /**
+     * Returns if the class has a specific constant
+     *
+     * @param string $name method name
+     * @return bool
+     */
+    public function hasConstant($name)
+    {
+        return parent::hasConstant($name);
+    }
+
 	/**
 	 * Returns if the class is an exception or its descendant.
 	 *
