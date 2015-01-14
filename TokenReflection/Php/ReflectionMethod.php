@@ -122,7 +122,13 @@ class ReflectionMethod extends InternalReflectionMethod implements IReflection, 
 		return array();
 	}
 
-	/**
+    public function invoke($object, $parameter = null, $_ = null)
+    {
+        parent::invoke($object, $parameter, $_);
+    }
+
+
+    /**
 	 * Returns if the current reflection comes from a tokenized source.
 	 *
 	 * @return boolean
