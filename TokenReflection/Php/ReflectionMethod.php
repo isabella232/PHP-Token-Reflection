@@ -122,9 +122,9 @@ class ReflectionMethod extends InternalReflectionMethod implements IReflection, 
 		return array();
 	}
 
-    public function invoke($object, $parameter = null, $_ = null)
+    public function invoke($object, $args)
     {
-        parent::invoke($object, $parameter, $_);
+        parent::invoke($object, $args);
     }
 
 
